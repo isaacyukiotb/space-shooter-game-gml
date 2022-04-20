@@ -1,18 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(keyboard_check(ord("A"))){
-	x -= velocidade;
-}
+var up,down,left,right;
 
-if(keyboard_check(ord("D"))){
-	x += velocidade;
-}
+up = keyboard_check(ord("W"));
+down = keyboard_check(ord("S"));
+left = keyboard_check(ord("A"));
+right = keyboard_check(ord("D"));
 
-if(keyboard_check(ord("W"))){
-	y -= velocidade;
-}
-
-if(keyboard_check(ord("S"))){
-	y += velocidade;
-}
+y += (down - up) * velocidade;
+x += (right - left) * velocidade;
