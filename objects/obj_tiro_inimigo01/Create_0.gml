@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-velocidade =3;
+vspeed = 6;
 
-vspeed = velocidade;
+image_xscale = 2;
+image_yscale = 3;
 
-alarm[0] = room_speed * random_range(1,3);
+alarm[0] = 2;
